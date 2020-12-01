@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/assets/space.jpg);
+  background-repeat: no-repeat;
+}
+
+.information-section {
+}
+
+header {
+  height: 100vh;
+}
+
+.hero-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: transform 2s;
+}
+
+.hero-container h1 {
+  font-size: 56px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#rotate-text {
+  transform: rotate(180deg);
+  opacity: 0.4;
+}
+
+p .under-text {
+  font-size: 24px;
+  font-style: italic;
+}
+
+/*
+
+NAV Section
+
+*/
+
+nav {
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 60px;
+}
+
+.btn-header {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav a {
+  transition: 0.1s;
+}
+
+nav a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+.information-section {
+  margin-top: 600px;
+}

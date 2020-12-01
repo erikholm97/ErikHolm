@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/erikholm97/">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/erikholm97">Git Hub</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="hero-container">
+        <button class="btn-header" onclick="MoveHeader()">
+          <h1 id="header-text">Erik Holm</h1>
+          <h1 id="rotate-text">Erik Holm</h1>
+        </button>
+        <p class="under-text">Software developer</p>
+      </div>
+    </header>
+    <div class="information-section">
+      <div class="information-section-left">
+        <h2>About me</h2>
+        <p>
+          I am an softwaredeveloper who graduated from University West in 2020.
+        </p>
+      </div>
+      <div class="information-section-right">
+        <h2>About me</h2>
+        <p>
+          I am an softwaredeveloper who graduated from University West in 2020.
+        </p>
+      </div>
+      <div class="table"></div>
+    </div>
+  </body>
+</html>
+<script>
+  let elementText = document.getElementById("header-text");
+  let isDefaultColor;
+
+  function MoveHeader() {
+    if (isDefaultColor === true) {
+      elementText.style.color = "white";
+      document.getElementById("header-text").innerText = "Erik Holm";
+      document.getElementById("rotate-text").style.display = "";
+      isDefaultColor = false;
+    } else {
+      elementText.style.color = "grey";
+      document.getElementById("header-text").innerText = "@erikholm97";
+      document.getElementById("rotate-text").style.display = "none";
+      isDefaultColor = true;
+    }
+  }
+</script>
