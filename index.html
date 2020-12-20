@@ -10,41 +10,43 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
       rel="stylesheet"
     />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/erikholm97/">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://github.com/erikholm97">Git Hub</a>
-        </li>
-      </ul>
-    </nav>
     <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/erikholm97/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/erikholm97">Git Hub</a>
+          </li>
+        </ul>
+      </nav>
       <div class="hero-container">
         <button class="btn-header" onclick="MoveHeader()">
           <h1 id="header-text">Erik Holm</h1>
           <h1 id="rotate-text">Erik Holm</h1>
         </button>
-        <p class="under-text">Software developer</p>
       </div>
     </header>
     <div class="information-section">
-      <div class="information-section-left">
-        <h2>About me</h2>
+      <div class="information-section-text">
+      <h2 class="information-section-h2">Bio</h2>
         <p>
-          I am an softwaredeveloper who graduated from University West in 2020.
+          I am Erik Holm, an 23 year old developer with passion for coding. </br>Im settled in Gothenburg where i live with my girlfriend and her cat Wiggly.
         </p>
       </div>
-      <div class="information-section-right">
-        <h2>About me</h2>
-        <p>
-          I am an softwaredeveloper who graduated from University West in 2020.
-        </p>
+        <div class="profile-image">
+            <img src="assets/ProfilePicture.jpg" alt="Profile picture of me">
+        </div>
       </div>
+      </div>
+      <div class="table"></div>
+    </div>
+    <div class="content-section">
       <div class="table"></div>
     </div>
   </body>
@@ -53,17 +55,22 @@
   let elementText = document.getElementById("header-text");
   let isDefaultColor;
 
-  function MoveHeader() {
-    if (isDefaultColor === true) {
-      elementText.style.color = "white";
-      document.getElementById("header-text").innerText = "Erik Holm";
-      document.getElementById("rotate-text").style.display = "";
-      isDefaultColor = false;
+  
+
+  jQuery(function($) {
+var $nav = $('.hero-container');
+var $win = $(window);
+var winH = $win.height(); // Get the window height.
+
+$win.on("scroll", function () {
+    if ($(this).scrollTop() > winH ) {
+        $nav.addClass("doch");
     } else {
-      elementText.style.color = "grey";
-      document.getElementById("header-text").innerText = "@erikholm97";
-      document.getElementById("rotate-text").style.display = "none";
-      isDefaultColor = true;
+        $nav.removeClass("doch");
     }
-  }
+}).on("resize", function(){ // If the user resizes the window
+   winH = $(this).height(); // you'll need the new height value
+});
+
+})
 </script>

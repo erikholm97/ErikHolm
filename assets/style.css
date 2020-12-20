@@ -10,16 +10,39 @@
   box-sizing: border-box;
 }
 
+.doch{ 
+  background-color: black;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+
 body {
-  background-image: url(/assets/space.jpg);
-  background-repeat: no-repeat;
+  background-color: black;
 }
 
 .information-section {
+    height: 100vh;
+    background-color: black;
+}
+
+.information-section-right{
+  text-align: right;
+}
+
+.content-section{
+  background-color: white;
+  height: 100vh;
 }
 
 header {
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/space.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-container {
@@ -28,8 +51,16 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  transition: transform 2s;
+  transition: 1.2s;
 }
+
+.hero-container:hover{
+  background-color: black;
+  padding: 20px;
+  border-radius: 15%;
+  
+}
+
 
 .hero-container h1 {
   font-size: 56px;
@@ -38,6 +69,7 @@ header {
   font-style: italic;
   margin-top: 10px;
 }
+
 
 #rotate-text {
   transform: rotate(180deg);
@@ -57,8 +89,8 @@ NAV Section
 
 nav {
   text-align: right;
-  margin-top: 30px;
   margin-right: 60px;
+  list-style: none;
 }
 
 .btn-header {
@@ -71,7 +103,7 @@ nav {
 }
 
 li {
-  list-style-type: none;
+  margin-top: 30PX;
   display: inline-block;
   margin-left: 30px;
 }
@@ -90,6 +122,34 @@ nav a:hover {
   border-bottom: 3px solid white;
 }
 
-.information-section {
-  margin-top: 600px;
+.information-section{
+  margin-top: 10vh;
+  margin-left: 25vh;
+  margin-bottom: 10vh;
 }
+.information-section-text{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.profile-image img{
+  width: 500px;
+  border-radius: 50px;
+  transition: 1.5s;
+}
+
+.profile-image img:hover{
+  opacity: 0.2;
+}
+
+.information-section-h2{
+  font-size: 30px;
+  font-size: bold;
+}
+
+.profile-picture-text{
+  position: relative;
+}
+
