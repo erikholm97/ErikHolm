@@ -11,9 +11,7 @@
 }
 
 .doch{ 
-  background-color: black;
-  padding: 20px;
-  border-radius: 100%;
+  display: none;
 }
 
 
@@ -46,19 +44,19 @@ header {
 }
 
 .hero-container {
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  transition: 1.2s;
+  transition: 1s ease-in;
 }
 
 .hero-container:hover{
   background-color: black;
-  padding: 20px;
-  border-radius: 15%;
-  
+  padding: 50px;
+  opacity: 1; 
+  border: 2px white; 
 }
 
 
@@ -67,7 +65,6 @@ header {
   letter-spacing: 2px;
   font-weight: bold;
   font-style: italic;
-  margin-top: 10px;
 }
 
 
@@ -122,16 +119,11 @@ nav a:hover {
   border-bottom: 3px solid white;
 }
 
+
 .information-section{
-  margin-top: 10vh;
-  margin-left: 25vh;
-  margin-bottom: 10vh;
-}
-.information-section-text{
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  text-align: justify;
+  display: block;
+  top: 50%;
+  left: 50%;
 }
 
 .profile-image img{
@@ -153,3 +145,14 @@ nav a:hover {
   position: relative;
 }
 
+.strength-section{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+
+.strength-section-list{
+      font-size: 90px;
+      font-style: italic;
+}
