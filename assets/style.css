@@ -6,29 +6,39 @@
   font: inherit;
   vertical-align: baseline;
   color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif, "Arial";
   box-sizing: border-box;
 }
-
-.doch{ 
-  display: none;
+#information-setion-picture {
+  height: 300px;
+  width: 60vh;
+  border: 20px solid red;
 }
 
+.link {
+  color: blue;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.doch {
+  display: none;
+}
 
 body {
   background-color: black;
 }
 
 .information-section {
-    height: 100vh;
-    background-color: black;
+  height: 100vh;
+  background-color: black;
 }
 
-.information-section-right{
+.information-section-right {
   text-align: right;
 }
 
-.content-section{
+.content-section {
   background-color: white;
   height: 100vh;
 }
@@ -52,13 +62,12 @@ header {
   transition: 1s ease-in;
 }
 
-.hero-container:hover{
+.hero-container:hover {
   background-color: black;
   padding: 50px;
-  opacity: 1; 
-  border: 2px white; 
+  opacity: 1;
+  border: 2px white;
 }
-
 
 .hero-container h1 {
   font-size: 56px;
@@ -66,7 +75,6 @@ header {
   font-weight: bold;
   font-style: italic;
 }
-
 
 #rotate-text {
   transform: rotate(180deg);
@@ -100,7 +108,7 @@ nav {
 }
 
 li {
-  margin-top: 30PX;
+  margin-top: 30px;
   display: inline-block;
   margin-left: 30px;
 }
@@ -119,10 +127,9 @@ nav a:hover {
   border-bottom: 3px solid white;
 }
 
-.information-section{
+.information-section {
   display: flex;
   background: black;
-  
 }
 
 .information-section p {
@@ -141,31 +148,34 @@ nav a:hover {
   height: 100%;
 }
 */
-.about-me-text{
+.about-me-text {
   background-color: grey;
   justify-content: center;
 }
-.profile-image:hover{
+.profile-image:hover {
   opacity: 0.1;
 }
 
-.information-section-h2{
+.information-section-h2 {
   font-size: 30px;
   font-size: bold;
 }
 
-.profile-picture-text{
+.profile-picture-text {
   position: relative;
 }
 
-.strength-section{
+.strength-section {
   margin: auto;
   width: 50%;
   text-align: center;
 }
 
+.strength-section-list {
+  font-size: 90px;
+  font-style: italic;
+}
 
-.strength-section-list{
-      font-size: 90px;
-      font-style: italic;
+.developer-text {
+  color: pink;
 }
