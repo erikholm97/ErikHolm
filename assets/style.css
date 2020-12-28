@@ -11,8 +11,26 @@
 }
 #information-setion-picture {
   height: 300px;
-  width: 60vh;
-  border: 20px solid red;
+  width: 300px;
+  border: 20px dotted white;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 0px 40px;
+  float: right;
+}
+
+table{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border: 1px solid white;
+  margin-top: 20px;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  
+}
+
+.table-head-text{
+  color: red;
 }
 
 .link {
@@ -31,7 +49,8 @@ body {
 
 .information-section {
   height: 100vh;
-  background-color: black;
+  display: inline-block;
+  
 }
 
 .information-section-right {
@@ -127,27 +146,12 @@ nav a:hover {
   border-bottom: 3px solid white;
 }
 
-.information-section {
-  display: flex;
-  background: black;
-}
 
 .information-section p {
   font-size: 60px;
   color: white;
 }
 
-/*
-.profile-image{
-  background: url("../assets/ProfilePicture.jpg");
-  background-size: cover;
-  transition: 1s;
-  display: block;
-  margin: auto;
-  left: 50%;
-  height: 100%;
-}
-*/
 .about-me-text {
   background-color: grey;
   justify-content: center;
