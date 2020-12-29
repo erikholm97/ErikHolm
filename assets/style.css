@@ -18,7 +18,7 @@
   float: right;
 }
 
-table{
+table {
   margin: auto;
   width: 50%;
   text-align: center;
@@ -26,10 +26,9 @@ table{
   margin-top: 20px;
   padding: 20px 10px 20px 10px;
   text-align: center;
-  
 }
 
-.table-head-text{
+.table-head-text {
   color: red;
 }
 
@@ -50,7 +49,6 @@ body {
 .information-section {
   height: 100vh;
   display: inline-block;
-  
 }
 
 .information-section-right {
@@ -146,7 +144,6 @@ nav a:hover {
   border-bottom: 3px solid white;
 }
 
-
 .information-section p {
   font-size: 60px;
   color: white;
@@ -171,13 +168,16 @@ nav a:hover {
 
 .strength-section {
   margin: auto;
-  width: 50%;
   text-align: center;
 }
 
+.strength-section ul {
+}
+
 .strength-section-list {
-  font-size: 90px;
+  font-size: 50px;
   font-style: italic;
+  height: 25vh;
 }
 
 .developer-text {
